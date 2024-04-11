@@ -2,7 +2,7 @@
     padding:0px;
     margin:0px;
     position:fixed;
-    right:-120px;
+    left:-30px;
     top:230px;
     width:200px;
     z-index: 1100;
@@ -20,9 +20,7 @@
     transition:all 0.25s ease-in-out;
     cursor:pointer;
 }
-.sticky li:hover{
-    margin-left:-115px;
-}
+
 .sticky li img{
     float:left;
     margin:5px 4px;
