@@ -4,8 +4,9 @@
     position:fixed;
     left:-30px;
     top:230px;
-    width:200px;
+    width:300px;
     z-index: 1100;
+    size: 10px;
 }
 .sticky li{
     list-style-type:none;

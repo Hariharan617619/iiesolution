@@ -19,25 +19,81 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/social.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/onclick-form-popup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/onclick-form-popup.js"></script>
+    <script src="js/click.js"></script>
   </head>
   <body>
-    <!-- The social media icon bar -->
-	<div class="sticky-container">
-		<ul class="sticky">
-			<li>
-				<a href="https://wa.me/919894366535/" target="_blank">
-				  <img src="images/social/wa.gif" width="32" height="32">
-				</a>
-				<p><a href="https://wa.me/919894366535/" target="_blank">WhatsApp</a></p>
-			</li>
-			<li>
-			  <a href="mailto:info@iiesolution.com" target="_blank">
-				<img src="images/social/mail.gif" width="32" height="32">
-			  </a>
-				<p><a href="mailto:info@iiesolution.com" target="_blank">Email</a></p>
-			</li>
-		</ul>
-	</div>
+	<div class="side-widget open">
+		<div class="inner">
+		  <img src="images/social/save.gif" id="get-started" width="102" height="102">
+		</div>
+	  </div>
+  
+	  <div id="popup-container">
+		<div id="popup-window">
+		  <div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>  
+			<a href="#" class="your-class"></a>
+			<div>
+			  <div class="row text-center">
+				<h2 class="reg">Book An Appointemt Now!</h2>
+				<hr><br>
+			
+			  </div>
+			  <br>
+			  <form action="" method="post" id="footer-form">
+				<div class="row">
+				  <div class="col-md-6">
+					<input type="text" id="Name" class="form-control" placeholder="Your Name" required>
+				  </div>
+				  <div class="col-md-6">
+					<input type="text" id="Email" class="form-control" placeholder="Your Email" required>
+				  </div>
+				</div>
+				<br>
+				<div class="row">
+				  <div class="col-md-6">
+					<input type="tel" id="Contact" class="form-control" placeholder="Your Contact" required>
+				  </div>
+				  <div class="col-md-6">
+					<input type="text" id="subject" class="form-control" placeholder="Subject" required>
+					<br>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-md-12">
+					<textarea name="message" id="message" class="form-control" placeholder="Message" required></textarea>
+				  </div>
+				</div><br>
+				<center>
+				  <input type="button" value="Submit" class="btn btn-primary" onclick="Send()">
+				</center>
+			  </form>
+			  <br>
+			</div>
+		  </div>
+		</div>
+	  </div>
+		  <!-- The social media icon bar -->
+		  <div class="sticky-container">
+			<ul class="sticky">
+				<li>
+					<a href="https://wa.me/919894366535/" target="_blank">
+					  <img src="images/social/wa.gif" width="55" height="55">
+					</a>
+				</li><br>
+				<li>
+				  <a href="mailto:info@iiesolution.com" target="_blank">
+					<img src="images/social/mail.gif" width="55" height="55">
+				  </a>
+				</li>
+			</ul>
+		</div>
+  
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	   <div class="container">
@@ -287,6 +343,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
